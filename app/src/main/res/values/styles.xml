@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+<!--        <item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+<!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+
+    <style name="Dialog.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--        <item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <style name="Song" parent="@android:style/TextAppearance">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Song.MainText">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Song.SecondaryText">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="TransparentBottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="bottomSheetStyle">@style/SheetStyle</item>
+    </style>
+
+    <style name="SheetStyle" parent="android:Widget">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="behavior_peekHeight">auto</item>
+        <item name="behavior_hideable">true</item>
+        <item name="behavior_skipCollapsed">false</item>
+    </style>
+
+    <style name="Bottoms" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!--设置透明状态栏，适用于SDK19（4.4）及以上版本-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- 如果你不需要自定义状态栏颜色，下面两个可不要 -->
+<!--        <item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+<!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+<!--        &lt;!&ndash; 透明导航栏 &ndash;&gt;-->
+<!--        <item name="android:windowTranslucentNavigation">true</item>-->
+        <!--动画设置-->
+<!--        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>-->
+    </style>
+</resources>
